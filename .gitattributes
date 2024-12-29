@@ -1,0 +1,3 @@
+*.html linguist-language=HTML
+docs/* linguist-documentation=false
+bundled/** linguist-vendored=true
