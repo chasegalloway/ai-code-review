@@ -1,0 +1,19 @@
+{
+  "name": "high-seas-project",
+  "version": "1.0.0",
+  "description": "",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chase Galloway",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "eslint": "^9.17.0",
+    "express": "^4.21.2",
+    "openai": "^4.77.0"
+  }
+}

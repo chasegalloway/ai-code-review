@@ -11,8 +11,11 @@
 <body>
     <h1 id="title">AI Code Review</h1>
     <textarea id="code-input" type="text" placeholder="Enter your code here"></textarea>
-    <button id="submit-button">Submit</button>
-
+    <div id="output-container">
+        <button id="submit-button">Score</button>
+        <h2 id="score">?/10</h2>
+    </div>
     <script src="../src/input_resize.js"></script>
+    <script src="../src/scoring.js"></script>
 </body>
 </html>

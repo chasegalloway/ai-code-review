@@ -3,21 +3,13 @@ body {
     background-color: #f4f4f9;
 }
 
-#title {
-    color: #333;
-    font-size: 2em;
-    text-align: center;
-    margin-top: 3vh;
-}
-
 #code-input {
     display: block;
-    width: 80vw;
-    min-height: 20vh;
+    width: 75vw;
+    min-height: 40vh; /* fix not resizing */
     max-height: 75vh;
-    margin: 10vh auto;
+    margin-left: 10vh;
     margin-top: 4vh;
-    margin-bottom: 4vh;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-family: monospace;
@@ -26,10 +18,30 @@ body {
     resize: none;
 }
 
+#output-container {
+    position: absolute;
+    /* background-color: black; */
+    height: 51vh;
+    width: 19vw;
+    right: 0;
+    top: 12vh;
+}
+
+#score {
+    position: absolute;
+    right: 7.6vw;
+    top: 9vh;
+    padding: 0.5vh;
+    font-size: 1.5em;
+    color: #333;
+}
+
 #submit-button {
-    display: block;
-    margin: 0 auto;
-    padding: 10px 20px;
+    position: absolute;
+    height: 5vh;
+    width: 8vw; /* used to be 6vw */
+    top: 5vh;
+    left: 5.5vw;
     font-size: 1em;
     color: #fff;
     background-color: #007BFF;
@@ -41,4 +53,11 @@ body {
 
 #submit-button:hover {
     background-color: #0056b3;
+}
+
+#title {
+    color: #333;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 3vh;
 }
