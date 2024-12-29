@@ -25,11 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
             if (data.score) {
                 scoreElement.innerText = `Score: ${data.score}`;
             } else {
-                scoreElement.innerText = 'Error fetching score.';
+                alert('Error fetching score.');
             }
         } catch (error) {
             console.error('Error:', error);
-            scoreElement.innerText = 'Error connecting to server.';
+            alert('Error connecting to server.');
         }
     });
 });

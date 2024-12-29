@@ -5,10 +5,11 @@ body {
 
 #code-input {
     display: block;
-    width: 75vw;
+    width: 80vw;
     min-height: 40vh; /* fix not resizing */
     max-height: 75vh;
-    margin-left: 10vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
     margin-top: 4vh;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -16,19 +17,17 @@ body {
     font-size: 1em;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     resize: none;
+    
 }
 
 #output-container {
-    position: absolute;
-    /* background-color: black; */
+    background-color: black;
     height: 51vh;
-    width: 19vw;
     right: 0;
-    top: 12vh;
+    bottom: 0;
 }
 
 #score {
-    position: absolute;
     right: 7.6vw;
     top: 9vh;
     padding: 0.5vh;
@@ -37,11 +36,10 @@ body {
 }
 
 #submit-button {
-    position: absolute;
     height: 5vh;
     width: 8vw; /* used to be 6vw */
-    top: 5vh;
-    left: 5.5vw;
+    margin-left: 46vw;
+    margin-top: 2vh;
     font-size: 1em;
     color: #fff;
     background-color: #007BFF;
