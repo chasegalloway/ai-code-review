@@ -13,9 +13,22 @@
     <textarea id="code-input" type="text" placeholder="Enter your code here" spellcheck="false"></textarea>
     <div id="output-container">
         <button id="submit-button">Review</button>
-        <h2 id="score">--/10</h2>
+        <select id="style-select">
+            <option value="stylize">Stylize</option>
+            <option value="camelCase">camelCase</option>
+            <option value="snake_case">snake_case</option>
+            <option value="kebab-case">kebab-case</option>
+            <option value="UPPERCASE">UPPERCASE</option>
+            <option value="lowercase">lowercase</option>
+            <option value="BSD">BSD</option>
+            <option value="Linux">Linux</option>
+            <option value="Haskell">Haskell</option>
+            <option vlaue="Lisp">Lisp</option>
+        </select>
+        <h2 id="score"></h2>
     </div>
     <script src="../src/input_resize.js"></script>
     <script src="../src/scoring.js"></script>
+    <script src="../src/stylize.js"></script>
 </body>
 </html>

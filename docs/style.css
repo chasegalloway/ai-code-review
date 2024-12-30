@@ -6,7 +6,7 @@ body {
 #code-input {
     display: block;
     width: 80vw;
-    min-height: 40vh; /* fix not resizing */
+    min-height: 40vh;
     max-height: 75vh;
     margin-left: 10vw;
     margin-right: 10vw;
@@ -21,24 +21,41 @@ body {
 }
 
 #output-container {
-    background-color: black;
+    /* background-color: black; */
     height: 51vh;
     right: 0;
     bottom: 0;
 }
 
 #score {
-    right: 7.6vw;
-    top: 9vh;
-    padding: 0.5vh;
+    margin-left: 45%;
     font-size: 1.5em;
     color: #333;
+}
+
+#style-select {
+    margin-left: 10vw;
+    margin-top: 2vh;
+    width: 8vw;
+    height: 5vh;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#style-select:hover {
+    background-color: #0056b3;
 }
 
 #submit-button {
     height: 5vh;
     width: 8vw; /* used to be 6vw */
-    margin-left: 46vw;
+    margin-left: 35vw;
     margin-top: 2vh;
     font-size: 1em;
     color: #fff;
