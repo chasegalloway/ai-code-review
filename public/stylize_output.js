@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const styleSelect = document.getElementById('style-select');
+    const codeInput = document.getElementById('code-input');
 
     styleSelect.addEventListener('change', async () => {
         const code = codeInput.value;
@@ -11,13 +12,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         try {
-            const response = await fetch('http://localhost:3000/stylize', {
+            const response = await fetch('/api/stylize', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
+                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ code: code, style: style }),
             });
+            
 
             const data = await response.json();
 

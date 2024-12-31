@@ -38,7 +38,7 @@ body {
     margin-top: 2vh;
     width: 8vw;
     height: 5vh;
-    font-size: 1em;
+    font-size: 2vh;
     border: none;
     border-radius: 5px;
     background-color: #007BFF;
@@ -57,7 +57,7 @@ body {
     width: 8vw; /* used to be 6vw */
     margin-left: 35vw;
     margin-top: 2vh;
-    font-size: 1em;
+    font-size: 2vh;
     color: #fff;
     background-color: #007BFF;
     border: none;
