@@ -8,7 +8,7 @@ export default async function handler(req, res) {
     if (req.method === 'POST') {
         const { code, style } = req.body; 
 
-        const prompt = `Reformat the following code snippet to match the ${style} style guide. Only return the entire reformatted code and no additional text. If the style is Stylize, do not make any changes and just output the inputted text.\n\nCode:\n${code}`;
+        const prompt = `Reformat the following code snippet to match the ${style} style guide. Only return the entire reformatted code and no additional text. If the style is Stylize, do not make any changes\n\nCode:\n${code}`;
 
         try {
             const response = await openai.chat.completions.create({

@@ -9,9 +9,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="loading" class="loading-spinner"></div>
     <h1 id="title">AI Code Review</h1>
-    <textarea id="code-input" type="text" placeholder="Enter your code here" spellcheck="false"></textarea>
+    <textarea id="code-input" type="text" placeholder="Enter your code here" spellcheck="false">
+    </textarea>
     <div id="output-container">
+        <button id="functionality-score">Functionality: --/10</button>
+        <button id="style-score">Style: --/10</button>
+        <button id="optimization-score">Optimization: --/10</button>
+        <button id="security-score">Security: --/10</button>
+        
         <button id="submit-button">Review</button>
         <select id="style-select">
             <option value="stylize">Stylize</option>

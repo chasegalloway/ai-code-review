@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const styleSelect = document.getElementById('style-select');
     const codeInput = document.getElementById('code-input');
+    const loadingSpinner = document.getElementById('loading');
 
     styleSelect.addEventListener('change', async () => {
         const code = codeInput.value;
@@ -10,6 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Please enter some code.');
             return;
         }
+
+        loadingSpinner.style.display = 'block';
 
         try {
             const response = await fetch('/api/stylize', {
@@ -29,6 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
         } catch (error) {
             console.error('Error:', error);
             alert('Error connecting to server.');
+        } finally {
+            loadingSpinner.style.display = 'none';
         }
     });
 });

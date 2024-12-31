@@ -8,8 +8,7 @@ body {
     width: 80vw;
     min-height: 40vh;
     max-height: 75vh;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 9vw;
     margin-top: 4vh;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -18,6 +17,56 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     resize: none;
     
+}
+
+#functionality-score {
+    position: absolute;
+    margin-top: 2vh;
+    background-color: transparent;
+    border: none;
+    font-size: 1.25vw;
+    left: 12vw;
+    transition: color 0.3s ease;
+}
+
+#functionality-score:hover {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+.loading-spinner {
+    position: absolute;
+    border: 6px solid #aaaaaa;
+    border-top: 6px solid #007BFF;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    top: 50%;
+    left: 48.5%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+#optimization-score {
+    position: absolute;
+    margin-top: 2vh;
+    background-color: transparent;
+    border: none;
+    font-size: 1.25vw;
+    left: 56vw;
+    transition: color 0.3s ease;
+}
+
+#optimization-score:hover {
+    color: #007BFF;
+    text-decoration: underline;
 }
 
 #output-container {
@@ -33,9 +82,24 @@ body {
     color: #333;
 }
 
-#style-select {
-    margin-left: 10vw;
+#security-score {
+    position: absolute;
     margin-top: 2vh;
+    background-color: transparent;
+    border: none;
+    font-size: 1.25vw;
+    left: 78vw;
+    transition: color 0.3s ease;
+}
+
+#security-score:hover {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+#style-select {
+    margin-left: 12vw;
+    margin-top: 8vh;
     width: 8vw;
     height: 5vh;
     font-size: 2vh;
@@ -52,11 +116,26 @@ body {
     background-color: #0056b3;
 }
 
+#style-score {
+    position: absolute;
+    margin-top: 2vh;
+    background-color: transparent;
+    border: none;
+    font-size: 1.25vw;
+    left: 36vw;
+    transition: color 0.3s ease;
+}
+
+#style-score:hover {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
 #submit-button {
     height: 5vh;
     width: 8vw; /* used to be 6vw */
     margin-left: 35vw;
-    margin-top: 2vh;
+    margin-top: 8vh;
     font-size: 2vh;
     color: #fff;
     background-color: #007BFF;
