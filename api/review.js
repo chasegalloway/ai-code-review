@@ -8,7 +8,7 @@ export default async function handler(req, res) {
     if (req.method === 'POST') {
         const { code } = req.body;
 
-        const prompt = `Analyze the following code. Provide a score out of 10 based on functionality, style, optimizations, and security. Respond only with the score for each category and one paragraph explaining why it got that score in the format:
+        const prompt = `Analyze the following code. Provide a score out of 10 based on functionality, style, optimizations, and security. Respond only with the score for each category and one paragraph explaining exactly why it got that score in the format:
 Functionality: x/10
 Style: x/10
 Security: x/10
